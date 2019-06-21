@@ -12,3 +12,4 @@ RUN pecl install redis && docker-php-ext-enable redis
 ENV PATH  /usr/local/env:$PATH
 
 ENTRYPOINT ["/entrypoint.sh"]
+CMD [ "polar" ]
